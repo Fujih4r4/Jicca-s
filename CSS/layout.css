@@ -1,0 +1,124 @@
+*{
+
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+    padding: 0;
+    margin: 0;
+}
+
+.topo{
+    text-align: center;
+    background-color: rgb(5, 80, 36);
+    padding: 30px;
+}
+
+.topo h1{
+    font-size: 50px;
+}
+
+.menuTopo{
+    text-align: center;
+    background-color: rgb(15, 88, 8);
+    overflow: hidden;
+    position: sticky;
+    top: 10px;
+}
+
+.menuTopo ul{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menuTopo ul li{
+    float: left;
+}
+
+.menuTopo a{
+    display: block;
+    color: rgb(6, 2, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    background-color: olivedrab;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+.menuTopo a:hover{
+    background-color: darkgreen;
+    color: green;
+    font-weight: bold;
+}
+
+.corpo{
+    width: 1024px;
+    margin: 10px auto;
+}
+
+.corpo::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.esquerda{
+    width: 75%;
+    float: left;
+}
+
+.direita{
+    width: 25%;
+    float: left;
+    background-color: rgb(84, 87, 87);
+    padding: 5px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(42, 43, 41);
+}
+
+.destaque{
+    background-color: rgb(80, 79, 79);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.imagens{
+    width: 100%;
+}
+
+.imagens img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    .corpo{
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .esquerda, .direita{
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .menuTopo ul li, .menuTopo a{
+        float: none;
+        width: 100%;
+    }
+    
+}
